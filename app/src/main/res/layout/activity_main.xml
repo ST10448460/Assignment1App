@@ -11,9 +11,9 @@
         android:id="@+id/btnCompute"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
-        android:layout_marginTop="34dp"
-        android:layout_marginEnd="72dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="54dp"
         android:text="Generate history"
         app:layout_constraintEnd_toStartOf="@+id/btnClear"
         app:layout_constraintStart_toStartOf="parent"
@@ -24,31 +24,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="34dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="69dp"
         android:text="Clear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/btnCompute"
         app:layout_constraintTop_toBottomOf="@+id/edtAge" />
 
-    <EditText
-        android:id="@+id/edtAge"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="111dp"
-        android:layout_marginEnd="97dp"
-        android:ems="10"
-        android:hint="@string/appbar_scrolling_view_behavior"
-        android:minHeight="48dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtName" />
-
     <TextView
         android:id="@+id/edtName"
         android:layout_width="251dp"
         android:layout_height="100dp"
+        android:layout_marginTop="51dp"
+        android:layout_marginBottom="99dp"
         android:autoSizeTextType="uniform"
         android:ellipsize="middle"
         android:shadowColor="#3F51B5"
@@ -56,26 +44,54 @@
         android:textColor="#FFEB3B"
         android:textColorHighlight="#BA1818"
         android:textSize="34sp"
-        tools:layout_editor_absoluteX="80dp"
-        tools:layout_editor_absoluteY="51dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toTopOf="@+id/edtAge"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="80dp" />
 
     <TextView
         android:id="@+id/txtAnswer"
         android:layout_width="406dp"
         android:layout_height="260dp"
         android:layout_marginStart="81dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="123dp"
-        android:layout_marginBottom="39dp"
         android:textColor="#2196F3"
         android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.396"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnCompute"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintTop_toBottomOf="@+id/btnCompute" />
+
+    <EditText
+        android:id="@+id/edtAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="106dp"
+        android:ems="10"
+        android:hint="@string/appbar_scrolling_view_behavior"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="168dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="163dp"
+        android:layout_marginBottom="58dp"
+        android:text="INSERT AGE:"
+        app:layout_constraintBottom_toTopOf="@+id/edtAge"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtName" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

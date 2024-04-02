@@ -56,7 +56,7 @@ class MainActivity : AppCompatActivity() {
                 age in (85..94) -> "Nelson Mandela died on the 5 december 2013 at the age of 94, he was a south african anti apartheid activist politician and statesman who served as the first president of south africa from 1994 to 1999."
 
                 else -> {
-                    "invalid input"
+                    "The age you entered is an invalid format"
                 }
 
             }
@@ -66,9 +66,7 @@ class MainActivity : AppCompatActivity() {
             } else {
                 txtAnswer.setText("$ageInt")
             }
-            if (ageInt.contains(".") || ageInt.matches("\\d+\\s*[a-zA-Z]*".toRegex())) {
-                txtAnswer.text = "Invalid Input"
-            }
+
         } 
 
         btnClear.setOnClickListener{

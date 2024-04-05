@@ -37,3 +37,4 @@ References:
 4. Kee, K. (2014).Pastplay: Teaching and learning history with technology. University of Michigan Press.
 5. Kee, K., & Browne, K. (2014).Designing and developing robust historical simulations: Lessons learned from the simulations of the past (soP) project.In K. Kee (Ed.), Pastplay: Teaching and Learning history with technology(pp. 271-299).University of Michigan Press. 
 6.https.eduwriter.ai."the conusion of the history app paraphrased"
+WORDS:1225 

@@ -38,22 +38,22 @@ class MainActivity : AppCompatActivity() {
         val btnClear = findViewById<Button>(R.id.btnClear)
         val txtAnswer = findViewById<TextView>(R.id.txtAnswer)
 
-        btnCompute.setOnClickListener {
+        btnCompute.setOnClickListener {                      //add code to the button when it is clicked 
 
             val age = age.text.toString().toIntOrNull()
-            var ageInt = when {
-                age in (20..30) -> "there are no historical figures that fall in this age."
-                age in (40..49) -> "there are no historical figures that fall in the age."
-                age in (50..59) -> "William Shakespeare died on the 23 April 1616 at the age of 52, he was an english playwright, poet and actor."
-                age in (60..62) -> "Mahatma Gandhi was assassinated on the 30 january 1948 at the age of 60, he was an indian lawyer and political ethicist."
-                age in (62..64) -> "Albert Einstein died on the 18 April 1955 at the age of 64, he was a german born theoretical physicist."
-                age in (61..63) -> "Thomas Edison died on the 18 october 1931 at the age of 63, he was a american inventor and businessman."
-                age in (63..66) -> "Charles Darwin died on the 19 April 1882 at the age of 66, he was a english naturalist, geologist and biologist."
-                age in (66..69) -> "Leonardo da Vinci died on 2 may 1519 at the age of 69, he was a italian polymath of the high renaissance who was a painter,draughtsman and engineer."
-                age in (69..74) -> "Alexander Graham Bell died on the 2 august 1922 at the age of 74, he was a scottish born canadian american inventor scientist and engineer."
-                age in (74..76) -> "Franklin d. Roosevelt died on the 12 april 1945 at the age of 76, he was a american statesman and politician who served as the 32nd president of united states"
-                age in (76..91) -> "Pablo Picasso died on the 8 april 1973 at the age of 91, he was a spanish painter, sculptor, print maker, ceramicist and theatre designer."
-                age in (85..94) -> "Nelson Mandela died on the 5 december 2013 at the age of 94, he was a south african anti apartheid activist politician and statesman who served as the first president of south africa from 1994 to 1999."
+            var ageInt = when (age) {
+                30 -> "there are no historical figures that fall in this age."
+                40 -> "there are no historical figures that fall in the age."
+                52 -> "William Shakespeare died on the 23 April 1616 at the age of 52, he was an english playwright, poet and actor."
+                60 -> "Mahatma Gandhi was assassinated on the 30 january 1948 at the age of 60, he was an indian lawyer and political ethicist."
+                64 -> "Albert Einstein died on the 18 April 1955 at the age of 64, he was a german born theoretical physicist."
+                63 -> "Thomas Edison died on the 18 october 1931 at the age of 63, he was a american inventor and businessman."
+                66 -> "Charles Darwin died on the 19 April 1882 at the age of 66, he was a english naturalist, geologist and biologist."
+                69 -> "Leonardo da Vinci died on 2 may 1519 at the age of 69, he was a italian polymath of the high renaissance who was a painter,draughtsman and engineer."
+                74 -> "Alexander Graham Bell died on the 2 august 1922 at the age of 74, he was a scottish born canadian american inventor scientist and engineer."
+                76 -> "Franklin d. Roosevelt died on the 12 april 1945 at the age of 76, he was a american statesman and politician who served as the 32nd president of united states"
+                91 -> "Pablo Picasso died on the 8 april 1973 at the age of 91, he was a spanish painter, sculptor, print maker, ceramicist and theatre designer."
+                94 -> "Nelson Mandela died on the 5 december 2013 at the age of 94, he was a south african anti apartheid activist politician and statesman who served as the first president of south africa from 1994 to 1999."
 
                 else -> {
                     "The age you entered is an invalid format"
@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
 
         } 
 
-        btnClear.setOnClickListener{
+        btnClear.setOnClickListener{                 //clear out the txtAnswer and age when clicked 
             age.setText("")
             txtAnswer.text = ""
         }
